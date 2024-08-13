@@ -135,3 +135,13 @@ console.log(student.grade);     // Output: A
 // `address` (string), `size` (number), `hasGarage` (boolean)
 // Log each property using dot notation.
 
+const house = {
+  address: '1710 Weistock Street',
+  size: 3,
+  hasGarage: false,
+}
+
+console.log("\n House");
+console.log(house.address);
+console.log(house.size);
+console.log(house.hasGarage);
