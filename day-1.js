@@ -106,6 +106,17 @@ console.log(product.inStock); // Output: true
 // `name` (string), `type` (string), `rating` (number)
 // Log each property using dot notation.
 
+const restaurant = {
+  name: "McDonald's",
+  type: 'Fast Food',
+  rating: 3.5
+}
+
+console.log('\n Restaurant')
+console.log(restaurant.name);
+console.log(restaurant.type);
+console.log(restaurant.rating);
+
 
 // Example 5: Creating a Student Object
 const student = {
