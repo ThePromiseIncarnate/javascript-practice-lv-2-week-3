@@ -77,6 +77,17 @@ console.log(car.year);   // Output: 2021
 // `brand` (string), `processor` (string), `ram` (number)
 // Log each property using dot notation.
 
+const computer = {
+  brand: 'ASUS',
+  processor: 'AMD A10-7400P Radeon R6, 10 Compute Cores 4C+6G   2.50 GHz',
+  ram: 8.00,
+}
+
+console.log("\n Computer");
+console.log(computer.brand);
+console.log(computer.processor);
+console.log(computer.ram);
+
 
 // Example 4: Creating a Product Object
 const product = {
