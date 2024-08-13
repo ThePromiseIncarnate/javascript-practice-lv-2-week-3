@@ -20,9 +20,9 @@ console.log(book.pages);  // Output: 281
 // Log each property using dot notation.
 
 const movie = {
-  title: `Sonic the Hedgehog`, 
-  director: `Jeff Fowler`, 
-  year: `2020`, 
+  title: 'Sonic the Hedgehog', 
+  director: 'Jeff Fowler', 
+  year: 2020, 
 }
 
 console.log("\n Movie")
@@ -48,7 +48,16 @@ console.log(pet.age);     // Output: 5
 // `name` (string), `population` (number), `country` (string)
 // Log each property using dot notation.
 
+const city = {
+  name: 'Niceville',
+  population: 16218, 
+  country: 'United States of America',
+}
 
+console.log("\n City"); 
+console.log(city.name); 
+console.log(city.population);
+console.log(city.country);
 
 
 // Example 3: Creating a Car Object
