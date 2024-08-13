@@ -19,6 +19,17 @@ console.log(book.pages);  // Output: 281
 // `title` (string), `director` (string), `year` (number)
 // Log each property using dot notation.
 
+const movie = {
+  title: `Sonic the Hedgehog`, 
+  director: `Jeff Fowler`, 
+  year: `2020`, 
+}
+
+console.log("\n Movie")
+console.log(movie.title);
+console.log(movie.director);
+console.log(movie.year);
+
 
 // Example 2: Creating a Pet Object
 const pet = {
@@ -36,6 +47,8 @@ console.log(pet.age);     // Output: 5
 // Create an object named `city` with the following properties:
 // `name` (string), `population` (number), `country` (string)
 // Log each property using dot notation.
+
+
 
 
 // Example 3: Creating a Car Object
