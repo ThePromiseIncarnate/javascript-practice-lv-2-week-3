@@ -26,6 +26,23 @@ console.log(book.pages); // Output: 300
 // Add another method named `updateYear` that updates the `year` property.
 // Use `this` to access and modify the properties.
 
+const movie = {
+  title: 'Sonic the Hedgehog', 
+  year: 2019, 
+  watch: function() {
+    console.log(`You watched ${this.title}.`)
+  },
+  updateYear: function(y) {
+    this.year = y
+  },
+}
+
+console.log("\n Movie");
+console.log(movie);
+movie.watch();
+movie.updateYear(2020);
+console.log(movie.year);
+console.log(movie);
 
 // Example 2: Adding Methods to a Pet Object
 const pet = {
@@ -49,6 +66,23 @@ console.log(pet.name);  // Output: Paws
 // TODO 2: Add a method to `city` object
 // Add a method named `addPopulation` that increases the `population` property by a given number.
 // Add another method named `rename` that updates the `name` property using `this`.
+
+const city = {
+  name: 'Boggy',
+  population: 948, 
+  addPopulation: function() {
+    this.population += 185
+  },
+  rename: function(newName) {
+    this.name = newName
+  },
+}
+
+console.log("\n City"); 
+console.log(city);
+city.addPopulation();
+city.rename("Niceville");
+console.log(city);
 
 
 // Example 3: Adding Methods to a Car Object
