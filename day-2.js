@@ -107,6 +107,22 @@ console.log(car.year); // Output: 2023
 // Add a method named `upgradeRAM` that updates the `ram` property.
 // Add another method named `describe` that logs a message with the `brand`, `processor`, and `ram` properties.
 
+const computer = {
+  brand: 'ASUS',
+  processor: 'AMD A10-7400P Radeon R6, 10 Compute Cores 4C+6G   2.50 GHz',
+  ram: 8,
+  updateRam: function(newRam) {
+    this.ram = newRam
+  },
+  describe: function() {
+    console.log(`My computer is a ${this.brand} with a ${this.processor} processor and ${this.ram} GB of ram.`)
+  },
+}
+
+console.log("\n Computer");
+computer.describe();
+computer.updateRam(10);
+computer.describe();
 
  // Example 4: Adding Methods to a Product Object
 const product = {
@@ -132,6 +148,23 @@ console.log(product.inStock); // Output: false
 // Add a method named `changeRating` that updates the `rating` property.
 // Add another method named `reopen` that sets the `inStock` property to true.
 
+const restaurant = {
+  name: "McDonald's",
+  rating: 3.5, 
+  inStock: false,
+  changeRating: function(newRating) {
+    this.rating = newRating
+  },
+  reopen: function() {
+    this.inStock = true
+  },
+}
+
+console.log('\n Restaurant')
+console.log(restaurant);
+restaurant.changeRating(10);
+restaurant.reopen();
+console.log(restaurant);
 
 // Example 5: Adding Methods to a Student Object
 const student = {
@@ -155,3 +188,19 @@ console.log(student.fullName()); // Output: John Doe
 // Add a method named `renovate` that increases the `size` property by a given number.
 // Add another method named `changeAddress` that updates the `address` property.
 
+const house = {
+  address: '1710 Weistock Street',
+  size: 3,
+  renovate: function(newSize) {
+    this.size += newSize
+  }, 
+  changeAddress: function(newAddress) {
+    this.address = newAddress
+  }
+}
+
+console.log("\n House");
+console.log(house);
+house.renovate(2);
+house.changeAddress("Test");
+console.log(house);
