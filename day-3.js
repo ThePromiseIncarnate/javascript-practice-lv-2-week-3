@@ -152,3 +152,19 @@ myPet.celebrateBirthday(); // Output: Happy Birthday Bella! You are now 5 years 
 // - country
 // Add a method named `changePopulation` that takes a number as an argument and updates the `population` property.
 
+function createCityWithMethod(name, population, country) {
+  return {
+    name: name,
+    population: population,
+    country: country,
+    changePopulation: function(addPopulation) {
+      this.population += addPopulation
+    }
+  }
+}
+
+console.log("City 3");
+const myCity = createCityWithMethod('Niceville', 948, 'USA');
+console.log(myCity);
+myCity.changePopulation(1234)
+console.log(myCity);
