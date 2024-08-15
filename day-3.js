@@ -83,6 +83,18 @@ console.log(specificBook); // Output: { title: '1984', author: 'George Orwell', 
 // - species
 // - age
 
+function createPetWithDetails(name, species, age) {
+  return {
+    name: name,
+    species: species,
+    age: age,
+  }
+}
+
+console.log("Pet 2");
+const specificPet = createPetWithDetails('Sonya', 'Cat', 9);
+console.log(specificPet);
+
 
 // Example 4: Factory Function with Arguments
 function createCarWithDetails(brand, model, year) {
@@ -102,6 +114,18 @@ console.log(specificCar); // Output: { brand: 'Tesla', model: 'Model S', year: 2
 // - name
 // - population
 // - country
+
+function createCityWithDetails(name, population, country) {
+  return {
+    name: name,
+    population: population,
+    country: country,
+  }
+}
+
+console.log("City 2");
+const specificCity = createCityWithDetails('Eden', 1200, 'Japan');
+console.log(specificCity);
 
 
 // Example 5: Factory Function with Method
