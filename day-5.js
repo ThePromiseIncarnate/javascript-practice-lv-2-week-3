@@ -22,7 +22,9 @@ const songs = [];
 
 // Example: 
 songs.push(createSong('Yesterday', 'The Beatles', 1965));
-
+songs.push(createSong('What a Wonderful World', 'Louis Armstrong', 1967));
+songs.push(createSong('Over the Rainbow', 'Judy Garland', 1939));
+songs.push(createSong('Into the Pit', 'LongestSoloEver', 2024));
 console.table(songs);
 
 
