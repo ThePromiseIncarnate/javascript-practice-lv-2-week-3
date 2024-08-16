@@ -71,6 +71,10 @@ console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].
 // Modify the details of the fifth song
 // - Artist and year of the fifth song
 
+songs[4].artist = "What I put here doesn't matter";
+songs[4].year = 2024;
+
+console.log("Fifth song: Title = " + songs[4].title + ", Year = " + songs[4].year);
 
 
 console.log("\nExample 5: Modifying the Array");
@@ -87,3 +91,6 @@ console.log("Updated first song: Title = " + songs[0].title + ", Artist = " + so
 
 // TODO 5: Completely Replace the details of the second song.
 
+songs[1] = createSong('All Star', 'Smash Mouth', 1999);
+
+console.log("Updated second song: Title = " + songs[1].title + ", Artist = " + songs[1].artist + ", Year = " + songs[1].year);
