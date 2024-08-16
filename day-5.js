@@ -38,6 +38,8 @@ console.log("\nExample 2: Accessing Objects in the Array");
 // Example
 console.log("First song: Title = " + songs[0].title + ", Artist = " + songs[0].artist);
 // TODO: Access and log the details of the rest of the songs in the array
+console.log("Second song: Artist = " + songs[1].artist + ", Year = " + songs[1].year);
+console.log("Third song: Title = " + songs[2].title + ", Year = " + songs[2].year);
 
 console.log("\nExample 3: Adding More Songs");
 
@@ -50,6 +52,8 @@ songs.push(createSong('My Way', 'Frank Sinatra', 1969));
 songs.push(createSong('Imagine', 'John Lennon', 1971));
 // TODO 3: Add two songs more of your own
 
+songs.push(createSong('Shell', 'NateWantsToBattle', 2016));
+songs.push(createSong('FNAF song', 'TheLivingTombstone', 2014));
 console.table(songs);
 
 console.log("\nExample 4: Accessing New Songs");
